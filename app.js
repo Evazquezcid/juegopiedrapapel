@@ -69,15 +69,11 @@ function play (userOption) {
             resultText.innerHTML = "¡TU GANAS!";
             break;
         case LOST:
-            resultText.innerHTML = "¡Oh...Has perdido!";
+            resultText.innerHTML = "¡HAS PERDIDO!";
             break;
     }
        isPlaying = false;
-   },2000);
-     
-   
-    
-    
+   },2000); 
 
 }
 
@@ -97,7 +93,7 @@ function calcMachineOption() {
 
 //hacemos una funcion con todos los resultados posibles
 function calcResult(userOption, machineOption) {
-   
+    machineImg.src = "img/" + machineOption + ".png";
    if (userOption === machineOption){ 
       return TIE;
 
