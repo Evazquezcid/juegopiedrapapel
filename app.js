@@ -103,8 +103,8 @@ function calcResult(userOption, machineOption) {
 
    } else if (userOption === PIEDRA){
 
-        if (machineOption === PAPEL ) return LOST;
-        if (machineOption === TIJERA) return WIN;
+        if (machineOption === PAPEL ) return WIN;
+        if (machineOption === TIJERA) return LOST;
 
    } else if ( userOption === PAPEL ){
         if (machineOption === PIEDRA ) return LOST;
